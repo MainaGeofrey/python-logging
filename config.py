@@ -52,10 +52,15 @@ LOGGING_CONFIG = {
     },
 }
 
-logging.config.dictConfig(LOGGING_CONFIG)
+"""logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
 
 try:
     raise Exception("Throw exception")
 except Exception as e:
-    logger.error("Exception occurred")
+    logger.error("Exception occurred") """
+    
+#import logging this way
+import logging.config
+logging.config.fileConfig("logging.conf")
+logger = logging.getLogger(__name__)
