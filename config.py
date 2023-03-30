@@ -34,7 +34,7 @@ LOGGING_CONFIG = {
         "file_handler": {
             "class": "logging.FileHandler",
             "filename": "output.log",
-            "mode": "w",
+            "mode": "a",
             "level": "DEBUG",
             "formatter": "default_formatter",
         },

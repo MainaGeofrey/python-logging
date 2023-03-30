@@ -1,7 +1,7 @@
 import logging
 logging.basicConfig(
     filename="output.log",
-    filemode="w",
+    filemode="a",
     level=logging.DEBUG,
     format="%(asctime)s:%(levelname)s:%(message)s",
     datefmt="%Y-%m-%d %I:%M:%S%p",
