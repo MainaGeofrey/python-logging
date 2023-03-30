@@ -54,4 +54,8 @@ LOGGING_CONFIG = {
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
-logger.debug("errr")
+
+try:
+    raise Exception("Throw exception")
+except Exception as e:
+    logging.error("Exception occurred", exc_info=True)
