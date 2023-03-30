@@ -58,4 +58,4 @@ logger = logging.getLogger(__name__)
 try:
     raise Exception("Throw exception")
 except Exception as e:
-    logging.error("Exception occurred", exc_info=True)
+    logger.error("Exception occurred")
